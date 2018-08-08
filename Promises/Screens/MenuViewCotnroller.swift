@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class MenunViewController: UIViewController {
+final class MenuViewController: UIViewController {
     
     private let menuView = MenuView()
     
@@ -25,9 +25,14 @@ final class MenunViewController: UIViewController {
 
     private func setupCallbacks() {
         menuView.imageButton.addTarget(self, action: #selector(imageButtonTapped), for: .touchUpInside)
+        menuView.mapButton.addTarget(self, action: #selector(secondButtonTapped), for: .touchUpInside)
     }
     
     @objc func imageButtonTapped() {
-        navigationController?.pushViewController(ImageFetchViewController(), animated: true)
+        navigationController?.pushViewController(ImageAnimationViewController(), animated: true)
+    }
+    
+    @objc func secondButtonTapped() {
+        navigationController?.pushViewController(MapViewController(), animated: true)
     }
 }

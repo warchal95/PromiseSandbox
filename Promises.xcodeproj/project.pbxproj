@@ -11,7 +11,7 @@
 		E82D1347210727D50077795A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82D1346210727D50077795A /* AppDelegate.swift */; };
 		E82D134E210727D60077795A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E82D134D210727D60077795A /* Assets.xcassets */; };
 		E82D1351210727D60077795A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E82D134F210727D60077795A /* LaunchScreen.storyboard */; };
-		E884CEB221072945002CD6A1 /* ImageFetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884CEB021072945002CD6A1 /* ImageFetchViewController.swift */; };
+		E884CEB221072945002CD6A1 /* ImageAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884CEB021072945002CD6A1 /* ImageAnimationViewController.swift */; };
 		E884CEB321072945002CD6A1 /* MenuViewCotnroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884CEB121072945002CD6A1 /* MenuViewCotnroller.swift */; };
 		E884CEB52107294D002CD6A1 /* ButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884CEB42107294D002CD6A1 /* ButtonFactory.swift */; };
 		E884CEBA21072955002CD6A1 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884CEB621072955002CD6A1 /* View.swift */; };
@@ -19,6 +19,9 @@
 		E884CEBC21072955002CD6A1 /* LayoutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884CEB821072955002CD6A1 /* LayoutBuilder.swift */; };
 		E884CEBD21072955002CD6A1 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884CEB921072955002CD6A1 /* MenuView.swift */; };
 		E884CEBF2107295B002CD6A1 /* Array+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884CEBE2107295B002CD6A1 /* Array+NSLayoutConstraint.swift */; };
+		E89504C2211B0175004F94DE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89504C1211B0175004F94DE /* MapViewController.swift */; };
+		E8D7FECB211B0CDD002A4BB1 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D7FECA211B0CDD002A4BB1 /* PromiseKit.framework */; };
+		E8D7FECD211B27D1002A4BB1 /* MapContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D7FECC211B27D1002A4BB1 /* MapContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +33,7 @@
 		E82D134D210727D60077795A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E82D1350210727D60077795A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E82D1352210727D60077795A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E884CEB021072945002CD6A1 /* ImageFetchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFetchViewController.swift; sourceTree = "<group>"; };
+		E884CEB021072945002CD6A1 /* ImageAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAnimationViewController.swift; sourceTree = "<group>"; };
 		E884CEB121072945002CD6A1 /* MenuViewCotnroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewCotnroller.swift; sourceTree = "<group>"; };
 		E884CEB42107294D002CD6A1 /* ButtonFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonFactory.swift; sourceTree = "<group>"; };
 		E884CEB621072955002CD6A1 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
@@ -38,6 +41,9 @@
 		E884CEB821072955002CD6A1 /* LayoutBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutBuilder.swift; sourceTree = "<group>"; };
 		E884CEB921072955002CD6A1 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		E884CEBE2107295B002CD6A1 /* Array+NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		E89504C1211B0175004F94DE /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E8D7FECA211B0CDD002A4BB1 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8D7FECC211B27D1002A4BB1 /* MapContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8D7FECB211B0CDD002A4BB1 /* PromiseKit.framework in Frameworks */,
 				C1263971810A0CD81FC90002 /* Pods_Promises.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +71,7 @@
 		54B649BFD24EE3A8ADDBAD07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E8D7FECA211B0CDD002A4BB1 /* PromiseKit.framework */,
 				0D22927588257A59CCF5277D /* Pods_Promises.framework */,
 			);
 			name = Frameworks;
@@ -117,6 +125,7 @@
 				E884CEB821072955002CD6A1 /* LayoutBuilder.swift */,
 				E884CEB921072955002CD6A1 /* MenuView.swift */,
 				E884CEB621072955002CD6A1 /* View.swift */,
+				E8D7FECC211B27D1002A4BB1 /* MapContainerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -132,8 +141,9 @@
 		E884CEAF210728ED002CD6A1 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				E884CEB021072945002CD6A1 /* ImageFetchViewController.swift */,
+				E884CEB021072945002CD6A1 /* ImageAnimationViewController.swift */,
 				E884CEB121072945002CD6A1 /* MenuViewCotnroller.swift */,
+				E89504C1211B0175004F94DE /* MapViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -249,14 +259,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E884CEB221072945002CD6A1 /* ImageFetchViewController.swift in Sources */,
+				E884CEB221072945002CD6A1 /* ImageAnimationViewController.swift in Sources */,
 				E884CEB52107294D002CD6A1 /* ButtonFactory.swift in Sources */,
 				E884CEBA21072955002CD6A1 /* View.swift in Sources */,
+				E8D7FECD211B27D1002A4BB1 /* MapContainerView.swift in Sources */,
 				E884CEBC21072955002CD6A1 /* LayoutBuilder.swift in Sources */,
 				E884CEBD21072955002CD6A1 /* MenuView.swift in Sources */,
 				E82D1347210727D50077795A /* AppDelegate.swift in Sources */,
 				E884CEB321072945002CD6A1 /* MenuViewCotnroller.swift in Sources */,
 				E884CEBB21072955002CD6A1 /* DefaultButton.swift in Sources */,
+				E89504C2211B0175004F94DE /* MapViewController.swift in Sources */,
 				E884CEBF2107295B002CD6A1 /* Array+NSLayoutConstraint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

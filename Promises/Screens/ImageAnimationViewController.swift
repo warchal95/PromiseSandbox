@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ImageAnimationViewController.swift
 //  PromiseToPromise
 //
 //  Copyright © 2018 Michał Warchał. All rights reserved.
@@ -8,7 +8,7 @@
 import UIKit
 import PromiseKit
 
-final class ImageFetchViewController: UIViewController {
+final class ImageAnimationViewController: UIViewController {
     
     let imageView: UIImageView = {
         let view = UIImageView()
@@ -29,8 +29,8 @@ final class ImageFetchViewController: UIViewController {
     }
     
     private func downloadImage() {
+        guard let url = URL(string: "https://www.xyzarena.com/wp-content/uploads/2017/08/iOS-12-2-1-576x1024.jpg") else { return }
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        let url = URL(string: "https://iphonewalls.net/wp-content/uploads/2016/08/Forest%20River%20Crossing%20Mountain%20Fog%20iPhone%206+%20HD%20Wallpaper.jpg")!
         firstly {
             URLSession.shared.dataTask(.promise, with: url)
         }.compactMap { data, urlResponse in

@@ -9,7 +9,7 @@ import UIKit
 final class MenuView: View {
     
     private lazy var menuStackView: UIStackView = {
-        let view = UIStackView(arrangedSubviews: [imageButton, secondFuncButton, thirdFuncntionButton])
+        let view = UIStackView(arrangedSubviews: [imageButton, mapButton, thirdFuncntionButton])
         view.translatesAutoresizingMaskIntoConstraints = false
         view.axis = .vertical
         view.distribution = .fillEqually
@@ -17,9 +17,9 @@ final class MenuView: View {
         return view
     }()
     
-    internal let imageButton = ButtonFactory.navigationButton(title: "Image Magic")
+    internal let imageButton = ButtonFactory.navigationButton(title: "Image Animation")
     
-    internal let secondFuncButton = ButtonFactory.navigationButton(title: "some second button")
+    internal let mapButton = ButtonFactory.navigationButton(title: "Map View")
     
     internal let thirdFuncntionButton = ButtonFactory.navigationButton(title: "Some third button")
     
