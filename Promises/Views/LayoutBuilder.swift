@@ -1,8 +1,8 @@
 //
 //  LayoutBuilder.swift
-//  Teamy-Remote
+//  PromiseToPromise
 //
-//  Copyright © 2017 Netguru Sp. z o.o. All rights reserved.
+//  Copyright © 2018 Michał Warchał. All rights reserved.
 //
 
 import UIKit.NSLayoutConstraint
