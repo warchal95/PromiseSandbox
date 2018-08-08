@@ -2,6 +2,7 @@
 //  MenuView.swift
 //  PromiseToPromise
 //
+//  Copyright © 2018 Michał Warchał. All rights reserved.
 //
 
 import UIKit

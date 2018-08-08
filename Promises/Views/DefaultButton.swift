@@ -2,7 +2,6 @@
 //  DefaultButton.swift
 //  PromiseToPromise
 //
-//  Created by Michał Warchał on 23.07.2018.
 //  Copyright © 2018 Michał Warchał. All rights reserved.
 //
 

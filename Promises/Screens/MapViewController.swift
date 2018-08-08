@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  MapViewController.swift
 //  Promises
 //
 //  Copyright © 2018 Michał Warchał. All rights reserved.
@@ -48,11 +48,4 @@ extension MapViewController {
             seal.fulfill(CLLocationCoordinate2D(latitude: 50.06, longitude: 20))
         }
     }
-    
-    //    func getRegionFromLocation(_ location: CLLocationCoordinate2D) -> Promise<MKCoordinateRegion> {
-    //        return Promise { seal in
-    //            seal.fulfill(MKCoordinateRegion(center: location, span: span))
-    //
-    //        }
-    //    }
 }
