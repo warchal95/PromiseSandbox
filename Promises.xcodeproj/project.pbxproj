@@ -18,10 +18,11 @@
 		E884CEBB21072955002CD6A1 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884CEB721072955002CD6A1 /* DefaultButton.swift */; };
 		E884CEBC21072955002CD6A1 /* LayoutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884CEB821072955002CD6A1 /* LayoutBuilder.swift */; };
 		E884CEBD21072955002CD6A1 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884CEB921072955002CD6A1 /* MenuView.swift */; };
-		E884CEBF2107295B002CD6A1 /* Array+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884CEBE2107295B002CD6A1 /* Array+NSLayoutConstraint.swift */; };
+		E884CEBF2107295B002CD6A1 /* Array+NSLayoutConstraintExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884CEBE2107295B002CD6A1 /* Array+NSLayoutConstraintExtension.swift */; };
 		E89504C2211B0175004F94DE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89504C1211B0175004F94DE /* MapViewController.swift */; };
 		E8D7FECB211B0CDD002A4BB1 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D7FECA211B0CDD002A4BB1 /* PromiseKit.framework */; };
 		E8D7FECD211B27D1002A4BB1 /* MapContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D7FECC211B27D1002A4BB1 /* MapContainerView.swift */; };
+		E8D7FECF211B2D71002A4BB1 /* MKCoordinateSpanExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D7FECE211B2D71002A4BB1 /* MKCoordinateSpanExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,10 +41,11 @@
 		E884CEB721072955002CD6A1 /* DefaultButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 		E884CEB821072955002CD6A1 /* LayoutBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutBuilder.swift; sourceTree = "<group>"; };
 		E884CEB921072955002CD6A1 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		E884CEBE2107295B002CD6A1 /* Array+NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		E884CEBE2107295B002CD6A1 /* Array+NSLayoutConstraintExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+NSLayoutConstraintExtension.swift"; sourceTree = "<group>"; };
 		E89504C1211B0175004F94DE /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E8D7FECA211B0CDD002A4BB1 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D7FECC211B27D1002A4BB1 /* MapContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerView.swift; sourceTree = "<group>"; };
+		E8D7FECE211B2D71002A4BB1 /* MKCoordinateSpanExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateSpanExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +115,8 @@
 		E884CEAC210728D9002CD6A1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				E884CEBE2107295B002CD6A1 /* Array+NSLayoutConstraint.swift */,
+				E884CEBE2107295B002CD6A1 /* Array+NSLayoutConstraintExtension.swift */,
+				E8D7FECE211B2D71002A4BB1 /* MKCoordinateSpanExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				E884CEB221072945002CD6A1 /* ImageAnimationViewController.swift in Sources */,
 				E884CEB52107294D002CD6A1 /* ButtonFactory.swift in Sources */,
 				E884CEBA21072955002CD6A1 /* View.swift in Sources */,
+				E8D7FECF211B2D71002A4BB1 /* MKCoordinateSpanExtension.swift in Sources */,
 				E8D7FECD211B27D1002A4BB1 /* MapContainerView.swift in Sources */,
 				E884CEBC21072955002CD6A1 /* LayoutBuilder.swift in Sources */,
 				E884CEBD21072955002CD6A1 /* MenuView.swift in Sources */,
@@ -269,7 +273,7 @@
 				E884CEB321072945002CD6A1 /* MenuViewCotnroller.swift in Sources */,
 				E884CEBB21072955002CD6A1 /* DefaultButton.swift in Sources */,
 				E89504C2211B0175004F94DE /* MapViewController.swift in Sources */,
-				E884CEBF2107295B002CD6A1 /* Array+NSLayoutConstraint.swift in Sources */,
+				E884CEBF2107295B002CD6A1 /* Array+NSLayoutConstraintExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

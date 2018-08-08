@@ -31,8 +31,7 @@ extension MapViewController {
         firstly {
             getDesiredLocation()
         }.done { location in
-            let span = MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1)
-            let region = MKCoordinateRegion(center: location, span: span)
+            let region = MKCoordinateRegion(center: location, span: MKCoordinateSpan.defaultValue)
             self.mapContainerView.mapView.setRegion(region, animated: true)
             
             let annotation = MKPointAnnotation()
