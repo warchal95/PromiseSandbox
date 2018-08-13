@@ -30,10 +30,10 @@ extension MapViewController {
     private func applyCoordinates() {
         firstly {
             getDesiredLocation()
-        }.done { location in
+        }.get { location in
             let region = MKCoordinateRegion(center: location, span: MKCoordinateSpan.defaultValue)
             self.mapContainerView.mapView.setRegion(region, animated: true)
-            
+        }.done { location in
             let annotation = MKPointAnnotation()
             annotation.coordinate = location
             self.mapContainerView.mapView.addAnnotation(annotation)

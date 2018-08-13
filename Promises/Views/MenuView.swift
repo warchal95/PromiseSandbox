@@ -22,7 +22,7 @@ final class MenuView: View {
     
     internal let mapButton = ButtonFactory.navigationButton(title: "Map View")
     
-    internal let thirdFuncntionButton = ButtonFactory.navigationButton(title: "Some third button")
+    internal let thirdFuncntionButton = ButtonFactory.navigationButton(title: "Multiple Requests")
     
     override func layoutSubviews() {
         addSubview(menuStackView)

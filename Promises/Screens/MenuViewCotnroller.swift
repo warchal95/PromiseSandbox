@@ -25,14 +25,19 @@ final class MenuViewController: UIViewController {
 
     private func setupCallbacks() {
         menuView.imageButton.addTarget(self, action: #selector(imageButtonTapped), for: .touchUpInside)
-        menuView.mapButton.addTarget(self, action: #selector(secondButtonTapped), for: .touchUpInside)
+        menuView.mapButton.addTarget(self, action: #selector(mapButtonTapped), for: .touchUpInside)
+        menuView.thirdFuncntionButton.addTarget(self, action: #selector(multipleRequestButtonTapped), for: .touchUpInside)
     }
     
-    @objc func imageButtonTapped() {
+    @objc private func imageButtonTapped() {
         navigationController?.pushViewController(ImageAnimationViewController(), animated: true)
     }
     
-    @objc func secondButtonTapped() {
+    @objc private func mapButtonTapped() {
         navigationController?.pushViewController(MapViewController(), animated: true)
+    }
+    
+    @objc private func multipleRequestButtonTapped() {
+        navigationController?.pushViewController(MultipleRequestViewController(), animated: true)
     }
 }
