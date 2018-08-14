@@ -10,8 +10,17 @@ import PromiseKit
 
 final class MultipleRequestViewController: UIViewController {
     
+    let imageView: UIImageView = {
+        let view = UIImageView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.contentMode = .scaleAspectFit
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(imageView)
+        LayoutBuilder().pin(imageView, to: view, edges: .init(top: 0, left: 0, bottom: 0, right: 0))
         makePromiseChain()
     }
     
@@ -23,7 +32,9 @@ final class MultipleRequestViewController: UIViewController {
         }.compactMap { data, urlResponse in
             UIImage(data: data)
         }.done { image in
-            print(image)
+            self.imageView.image = image
+        }.catch { error in
+            print(error)
         }
     }
 }
