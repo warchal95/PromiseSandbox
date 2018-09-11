@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:PlaygroundPromise.playground">
+      location = "group:/Users/michalwarchal/Documents/Xcode/PromiseSandbox/PromisePlayground.playground">
    </FileRef>
    <FileRef
       location = "group:Promises.xcodeproj">
