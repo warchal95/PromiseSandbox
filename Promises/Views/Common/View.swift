@@ -12,11 +12,8 @@ public class View: UIView {
     init() {
         super.init(frame: .zero)
         self.translatesAutoresizingMaskIntoConstraints = false
-        
         setupLayout()
         setupProperties()
-        setupCallbacks()
-        setupBehaviour()
     }
     
     @available(*, unavailable, message: "Use init(frame:) instead")
@@ -24,24 +21,9 @@ public class View: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: Abstract
     /// Sets up the properties of `self`. Called automatically on `init()`.
-    internal func setupProperties() {
-        // no-op by default
-    }
+    internal func setupProperties() { }
     
     /// Sets up layout and subviews in `self`. Called automatically on `init()`.
-    internal func setupLayout() {
-        // no-op by default
-    }
-    
-    /// Sets up callbacks in `self`. Called automatically on `init()`.
-    internal func setupCallbacks() {
-        // no-op by default
-    }
-    
-    /// Sets up behaviour in `self`. Called automatically on `init()`.
-    internal func setupBehaviour() {
-        // no-op by default
-    }
+    internal func setupLayout() { }
 }

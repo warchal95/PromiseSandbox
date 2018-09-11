@@ -8,7 +8,7 @@
 import UIKit
 import PromiseKit
 
-final class ImageAnimationViewController: UIViewController {
+final public class ImageAnimationViewController: UIViewController {
     
     let imageView: UIImageView = {
         let view = UIImageView()
@@ -16,14 +16,14 @@ final class ImageAnimationViewController: UIViewController {
         return view
     }()
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(imageView)
         imageView.frame = CGRect(x: 0, y: 0, width: 50, height: 100)
         navigationController?.setNavigationBarHidden(false, animated: false)
     }
 
-    override func viewDidAppear(_ animated: Bool) {
+    override public func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         downloadImage()
     }
@@ -38,7 +38,7 @@ final class ImageAnimationViewController: UIViewController {
         }.done { image in
             self.imageView.image = image
             UIView.animate(.promise, duration: 0.5, animations: {
-                self.imageView.frame = UIScreen.main.bounds
+                self.imageView.frame = self.view.frame
             })
         }.ensure {
             UIApplication.shared.isNetworkActivityIndicatorVisible = false

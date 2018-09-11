@@ -7,7 +7,7 @@
 
 import MapKit.MKFoundation
 
-extension MKCoordinateSpan {
+public extension MKCoordinateSpan {
     static var defaultValue: MKCoordinateSpan {
         return MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1)
     }

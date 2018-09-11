@@ -7,10 +7,10 @@
 
 import UIKit
 
-final class MenuView: View {
+final public class MenuView: View {
     
     private lazy var menuStackView: UIStackView = {
-        let view = UIStackView(arrangedSubviews: [imageButton, mapButton, thirdFuncntionButton])
+        let view = UIStackView(arrangedSubviews: [imageButton, mapButton, multipleRequestButton])
         view.translatesAutoresizingMaskIntoConstraints = false
         view.axis = .vertical
         view.distribution = .fillEqually
@@ -22,9 +22,9 @@ final class MenuView: View {
     
     internal let mapButton = ButtonFactory.navigationButton(title: "Map View")
     
-    internal let thirdFuncntionButton = ButtonFactory.navigationButton(title: "Multiple Requests")
+    internal let multipleRequestButton = ButtonFactory.navigationButton(title: "Multiple Requests")
     
-    override func layoutSubviews() {
+    override public func setupLayout() {
         addSubview(menuStackView)
 
         let layoutBuilder = LayoutBuilder()
@@ -34,5 +34,9 @@ final class MenuView: View {
             menuStackView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * 0.7),
             menuStackView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height * 0.4)
         ])
+    }
+    
+    override public func setupProperties() {
+        backgroundColor = .white
     }
 }

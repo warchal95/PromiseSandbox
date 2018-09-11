@@ -7,7 +7,7 @@
 
 import UIKit.UIButton
 
-final class ButtonFactory {
+final public class ButtonFactory {
     
     static func navigationButton(title: String) -> UIButton {
         let button = UIButton(type: .system)

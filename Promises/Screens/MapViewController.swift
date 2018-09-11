@@ -9,11 +9,13 @@ import UIKit
 import PromiseKit
 import MapKit
 
-final class MapViewController: UIViewController {
+final public class MapViewController: UIViewController {
     
     private let mapContainerView = MapContainerView()
     
-    override func viewDidLoad() {
+    private let cracovCoordinates = CLLocationCoordinate2D(latitude: 50.06, longitude: 20)
+    
+    override public func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         applyCoordinates()
@@ -44,7 +46,7 @@ extension MapViewController {
     
     private func getDesiredLocation() -> Promise<CLLocationCoordinate2D> {
         return Promise<CLLocationCoordinate2D> { seal in
-            seal.fulfill(CLLocationCoordinate2D(latitude: 50.06, longitude: 20))
+            seal.fulfill(cracovCoordinates)
         }
     }
 }

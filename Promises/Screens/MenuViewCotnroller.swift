@@ -7,11 +7,11 @@
 
 import UIKit
 
-final class MenuViewController: UIViewController {
+final public class MenuViewController: UIViewController {
     
     private let menuView = MenuView()
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         setupCallbacks()
@@ -20,13 +20,13 @@ final class MenuViewController: UIViewController {
     private func setupView() {
         view.addSubview(menuView)
         LayoutBuilder().pin(menuView, to: view, edges: .init(top: 200, left: 80, bottom: -200, right: -80))
-        title = "Promise to Promise"
+        title = "Promise Playground"
     }
 
     private func setupCallbacks() {
         menuView.imageButton.addTarget(self, action: #selector(imageButtonTapped), for: .touchUpInside)
         menuView.mapButton.addTarget(self, action: #selector(mapButtonTapped), for: .touchUpInside)
-        menuView.thirdFuncntionButton.addTarget(self, action: #selector(multipleRequestButtonTapped), for: .touchUpInside)
+        menuView.multipleRequestButton.addTarget(self, action: #selector(multipleRequestButtonTapped), for: .touchUpInside)
     }
     
     @objc private func imageButtonTapped() {

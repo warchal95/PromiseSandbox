@@ -8,7 +8,7 @@
 import UIKit
 import PromiseKit
 
-final class MultipleRequestViewController: UIViewController {
+final public class MultipleRequestViewController: UIViewController {
     
     let imageView: UIImageView = {
         let view = UIImageView()
@@ -17,7 +17,7 @@ final class MultipleRequestViewController: UIViewController {
         return view
     }()
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(imageView)
         LayoutBuilder().pin(imageView, to: view, edges: .init(top: 0, left: 0, bottom: 0, right: 0))
@@ -43,13 +43,14 @@ extension MultipleRequestViewController {
     
     private func getUserAvatar() -> Promise<String> {
         return Promise { seal in
-            guard let url = URL(string: "https://reqres.in/api/users/1") else { return }
+            guard let url = URL(string: "https://reqres.in/api/users/5") else { return }
             URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
                 guard let data = data, error == nil else { return }
                 do {
                     guard let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any],
-                        let user = json["data"] as? [String: Any] else {
-                            return
+                        let user = json["data"] as? [String: Any]
+                    else {
+                        return
                     }
                     seal.fulfill(user["avatar"] as? String ?? "")
                 } catch let error {

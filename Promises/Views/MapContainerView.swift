@@ -6,9 +6,9 @@
 //
 
 import UIKit
-import MapKit
+import MapKit.MKMapView
 
-final class MapContainerView: View {
+final public class MapContainerView: View {
 
     internal let mapView: MKMapView = {
         let mapView = MKMapView()
@@ -18,7 +18,7 @@ final class MapContainerView: View {
 
     internal let imageButton = ButtonFactory.navigationButton(title: "Image Animation")
 
-    override func layoutSubviews() {
+    override public func setupLayout() {
         addSubview(mapView)
         let layoutBuilder = LayoutBuilder()
         layoutBuilder.pin(mapView, to: self)
